@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* Rules*/
+/* 
+TODO The font for the headlines is Lora and can be found on Google fonts.
+TODO The font list for the body copy is: Helvetica, Arial, sans-serif, and the color should be #333.
+TODO You can use #d0d0d0 for the light grey color of the lines.
+TODO Navigation links should behave thus: normal and visited: #666 and no underline , active: #DEB887, hover: #00ddff
+TODO The exception would be the title of the site. It should be a link, but should not have a hover change and should remain the same color of the rest of the text (#333)
+TODO You should be able to do this without modifying the html. Have that as your goal. If you do end up changing the .html file make sure to submit it with your css!
+ */
+
+:root{
+    --headline-font:'Lora', serif;
+    --body-font: Helvetica, Arial, sans-serif;
+    --body-font-color:#333;
+    --line-color:#d0d0d0;
+    --link-color: #666;
+    --link-color-active: #DEB887;
+    --link-color-hover: #00ddff;
+}
+
+body{
+    background-color: white;
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+}
+
+/* header */
+h1, h2{
+    font-family: var(--headline-font);
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+ul{
+    border-top: solid 1px var(--line-color);
+    border-bottom: solid 1px var(--line-color);
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+li{
+    font-size: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: var(--headline-font);
+}
+
+/* Links */
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:visited{
+    color: var(--link-color);
+}
+a:hover{
+    color: var(--link-color-hover);
+}
+
+a:active{
+    color:var(--link-color-active);
+}
+
+h1 a{
+    color: var(--body-font-color);  
+}
+
+h1 a:hover{
+    color: var(--body-font-color);
+}
+
+h1 a:visited{
+    color: var(--body-font-color);
+}
+h1 a:active{
+    color: var(--body-font-color);
+}
+
+/* main content */
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.post-date{
+    font-size: 1.5em;
+    font-family: var(--headline-font);
+    text-transform: uppercase;
+    text-align: end;
+    padding: 30px;
+}
+.post-content{
+    border-left: solid 1px var(--line-color);
+    border-bottom: solid 1px var(--line-color);
+    padding: 10px;
+}
+
+/**Responsive design using @media query*/
+@media screen and (max-width:400px){
+    ul{
+        display: block;
+        text-align: center;
+    }
+    article{
+        display: block;
+    }
+    .post-content{
+        border-top: solid 1px var(--line-color);
+        border-left: none;
+    }
+}
