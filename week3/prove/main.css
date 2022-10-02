@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+/*
+TODO The font for the headlines is Lora and can be found on Google fonts.
+TODO The font list for the body copy is: Helvetica, Arial, sans-serif, and the color should be #333.
+TODO You can use #d0d0d0 for the light grey color of the lines.
+TODO Navigation links should behave thus: normal and visited: #666 and no underline , active: #DEB887, hover: #00ddff
+TODO The exception would be the title of the site. It should be a link, but should not have a hover change and should remain the same color of the rest of the text (#333)
+TODO You should be able to do this without modifying the html. Have that as your goal. If you do end up changing the .html file make sure to submit it with your css!
+ */
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: "Lora", serif;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+ul {
+  border-top: solid 1px #d0d0d0;
+  border-bottom: solid 1px #d0d0d0;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+li {
+  font-size: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "Lora", serif;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+  color: #666;
+}
+a:hover {
+  color: #00ddff;
+}
+a:active {
+  color: #DEB887;
+}
+
+h1 a {
+  color: #333;
+}
+h1 a:hover {
+  color: #333;
+}
+h1 a:visited {
+  color: #333;
+}
+h1 a:active {
+  color: #333;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.post-date {
+  font-size: 1.5em;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  text-align: end;
+  padding: 30px;
+}
+
+.post-content {
+  border-left: solid 1px #d0d0d0;
+  border-bottom: solid 1px #d0d0d0;
+  padding: 10px;
+}
+
+@media (max-width: 450px) {
+  ul {
+    display: block;
+    text-align: center;
+  }
+  article {
+    display: block;
+  }
+  .post-content {
+    border-top: solid 1px #d0d0d0;
+    border-left: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

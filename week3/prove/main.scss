@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+// Rules
+/*
+TODO The font for the headlines is Lora and can be found on Google fonts.
+TODO The font list for the body copy is: Helvetica, Arial, sans-serif, and the color should be #333.
+TODO You can use #d0d0d0 for the light grey color of the lines.
+TODO Navigation links should behave thus: normal and visited: #666 and no underline , active: #DEB887, hover: #00ddff
+TODO The exception would be the title of the site. It should be a link, but should not have a hover change and should remain the same color of the rest of the text (#333)
+TODO You should be able to do this without modifying the html. Have that as your goal. If you do end up changing the .html file make sure to submit it with your css!
+ */
+
+ //variables
+$headline-font:'Lora', serif;
+$body-font: Helvetica, Arial, sans-serif;
+$body-font-color: #333;
+$line-color: #d0d0d0;
+$link-color: #666;
+$link-color-active:#DEB887;
+$link-color-hover: #00ddff;
+
+//breakpoints
+$break-small:450px;
+
+@mixin responsive-small() {
+    ul{
+        display:block;
+        text-align: center;
+    }
+    article{
+        display: block;
+    }
+    .post-content{
+        @include post-content-border($line-color)
+    }
+}
+
+
+@mixin post-content-border($color) {
+    border-top: solid 1px $color;
+    border-left: none;
+}
+
+body{
+    background-color: white;
+    font-family: $body-font;
+    color: $body-font-color;
+}
+//header 
+h1, h2{
+    font-family: $headline-font;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+ul{
+    border-top: solid 1px $line-color;
+    border-bottom: solid 1px $line-color;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+li{
+    font-size: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: $headline-font;
+}
+
+// Links 
+a{
+    color: $link-color;
+    text-decoration: none;
+    &:visited{
+        color: $link-color;
+    }
+    &:hover{
+        color: $link-color-hover;
+    }
+    &:active{
+        color: $link-color-active;
+    }
+}
+
+
+h1 a{
+    color: $body-font-color;  
+    &:hover{
+        color: $body-font-color;
+    }
+    &:visited{
+        color: $body-font-color;
+    }
+    &:active{
+        color: $body-font-color;
+    }
+}
+
+// main content 
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.post-date{
+    font-size: 1.5em;
+    font-family: $headline-font;
+    text-transform: uppercase;
+    text-align: end;
+    padding: 30px;
+}
+.post-content{
+    border-left: solid 1px $line-color;
+    border-bottom: solid 1px $line-color;
+    padding: 10px;
+}
+
+//Responsive design using @media query
+@media (max-width:$break-small){
+    @include responsive-small
+    
+}
