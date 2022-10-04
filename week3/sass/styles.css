@@ -1,0 +1,53 @@
+.chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #000;
+  display: inline-block;
+  background: #696;
+}
+.chip:nth-of-type(2) {
+  background: #e0ebe0;
+}
+.chip:nth-of-type(3) {
+  background: #3d5c3d;
+}
+.chip:nth-of-type(4) {
+  background: #4db34d;
+}
+.chip:nth-of-type(5) {
+  background: #85e085;
+}
+
+.analogous .chip {
+  background: #966;
+}
+.analogous .chip:nth-of-type(2) {
+  background: #ebe0e0;
+}
+.analogous .chip:nth-of-type(3) {
+  background: #5c3d3d;
+}
+.analogous .chip:nth-of-type(4) {
+  background: #b3b34d;
+}
+.analogous .chip:nth-of-type(5) {
+  background: #d194d1;
+}
+
+.complementary .chip {
+  background: #336;
+}
+.complementary .chip:nth-of-type(2) {
+  background: #9999cc;
+}
+.complementary .chip:nth-of-type(3) {
+  background: #111122;
+}
+.complementary .chip:nth-of-type(4) {
+  background: #757524;
+}
+.complementary .chip:nth-of-type(5) {
+  background: #c4c43c;
+}
+
+/*# sourceMappingURL=styles.css.map */

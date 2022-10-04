@@ -1,0 +1,76 @@
+//variables
+$color-base: #696;
+$color-background: lighten($color-base, 40);
+$color-dark: darken($color-base, 20);
+$color-accent: saturate($color-base, 20);
+$color-highlitght: lighten(saturate($color-base, 40), 20);
+
+$color-analogous-base: #966;
+$color-analogous-background: lighten($color-analogous-base, 40);
+$color-analogous-dark: darken($color-analogous-base, 20);
+$color-analogous-accent: saturate(adjust-color($color-analogous-base, $hue:60),20);
+$color-analogous-highlitght: lighten(saturate(adjust-color($color-analogous-base, $hue:300),20),20);
+
+$color-complementary-base: #336;
+$color-complementary-background: lighten($color-complementary-base, 40);
+$color-complementary-dark: darken($color-complementary-base, 20);
+$color-complementary-accent: saturate(adjust-color($color-complementary-base, $hue:180),20);
+$color-complementary-highlitght: lighten(saturate(adjust-color($color-complementary-base, $hue:180),20),20);
+
+
+
+.chip{
+    width: 4rem;
+    height:4rem;
+    border:1px solid #000;
+    display: inline-block;
+    background:$color-base;
+    &:nth-of-type(2){
+        background:$color-background;
+    }
+    &:nth-of-type(3){
+        background:$color-dark;
+    }
+    &:nth-of-type(4){
+        background:$color-accent;
+    }
+    &:nth-of-type(5){
+        background:$color-highlitght;
+    }
+}
+
+.analogous{
+    .chip{
+        background:$color-analogous-base;
+        &:nth-of-type(2){
+            background: $color-analogous-background;
+        }
+        &:nth-of-type(3){
+            background: $color-analogous-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-analogous-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-analogous-highlitght;
+        }
+    }
+}
+
+.complementary{
+    .chip{
+        background:$color-complementary-base;
+        &:nth-of-type(2){
+            background: $color-complementary-background;
+        }
+        &:nth-of-type(3){
+            background: $color-complementary-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-complementary-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-complementary-highlitght;
+        }
+    }
+}
