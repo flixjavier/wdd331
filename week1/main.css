@@ -21,7 +21,7 @@ TODO You should be able to do this without modifying the html. Have that as your
 }
 
 body {
-  background-color: white;
+  background-color: #ffffff;
   font-family: var(--body-font);
   color: var(--body-font-color);
 }
