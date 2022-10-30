@@ -1,0 +1,132 @@
+a{
+    transition: 0.5s; /*transition duration*/
+}
+
+a:link{
+    color: #309; /*start value*/
+}
+a:hover{
+    color: #f0c; /*end value*/
+}
+
+body {
+    background: #fcf;
+    transition: 5s steps(5, end);
+}
+/* body {
+    background: #fcf;
+    transition: 5s ease;
+} */
+/* body {
+    background: red;
+    transition: background 500ms linear 1s;
+} */
+
+.change {
+    background: #0cf;
+}
+
+li {
+    transition: 500ms;
+}
+.fade {
+    opacity: 0;
+}
+
+.pulse{
+    border: 1px solid black;
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.wiggle {
+    animation-name: wiggle;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.wobble {
+    animation: wobble 3s ease-in infinite forwards alternate;
+    animation-play-state: paused;
+}
+.running {
+    animation-play-state: running;
+}
+
+.card {
+    border: 1px solid #ccc;
+    height: 300px;
+    position: relative;
+    transition: transform 1s linear;
+    transform-style: preserve-3d;
+    width: 240px;
+}
+
+/* Applies to both child div elements */
+.side {
+    backface-visibility: hidden;
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+}
+.flipped {
+    transform: rotateY(180deg);
+}
+.front {
+    transform: rotateY(180deg);
+}
+.back {
+    background: rgba(204, 204, 204, 0.8);
+}
+.suit {
+    line-height: 1;
+    text-align: center;
+    font-size: 300px;
+}
+@media screen and ( prefers-reduced-motion ) {
+    .running { 
+        animation-play-state: paused;
+    }
+}
+
+@keyframes wobble {
+    from {
+        transform: scale(0.5);
+        opacity:0.2;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes pulse {
+    from {
+        transform: scale(0.5);
+        opacity:0.2;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle {
+    25% {
+        transform: scale(0.5) skewX(-5deg) rotate(-5deg);
+    }
+    50% {
+         transform: skewY(5deg) rotate(5deg);
+    }
+    75% {
+         transform: skewX(-5deg) rotate(-5deg) scale(1.5);
+     }
+    100% {
+        transform: scale(1.5);
+    }
+}

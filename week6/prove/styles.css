@@ -1,0 +1,49 @@
+.card-grid {
+  border: 1px solid black;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: auto;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.row-grid {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.row-grid img {
+  height: calc(100% - 30px);
+  width: 100%;
+}
+
+.col-grid img {
+  height: calc(100% - 30px);
+  width: 100%;
+}
+
+.col-grid {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 204vh;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

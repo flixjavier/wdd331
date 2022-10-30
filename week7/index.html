@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>
+      mouse over <a href="https://sitepoint.com/">this link</a>to see the
+      transition effect.
+    </p>
+    <button class="button">Click me!</button>
+
+    <h1>Please select your favorite color of the ones shown below.</h1>
+    <form>
+      <ul>
+        <li>
+          <input type="radio" name="favecolor" id="red" /><label for="red"
+            >Red</label
+          >
+        </li>
+        <li>
+          <input type="radio" name="favecolor" id="yellow" /><label for="yellow"
+            >Yellow</label
+          >
+        </li>
+        <li>
+          <input type="radio" name="favecolor" id="blue" /><label for="blue"
+            >Blue</label
+          >
+        </li>
+      </ul>
+      <div id="thanks" hidden>Thank you for selecting your favorite color.</div>
+      <button type="reset">Reset</button>
+    </form>
+    <hr>
+    <div class="pulse">Hello </div>
+    <hr>
+    <div class="wiggle">Hello</div>
+    <hr>
+    <div class="wobble">Hello</div>
+    <hr>
+    <div class="running">Hello</div>
+    <hr>
+    <button id="trigger">Run</button>
+    <script src="handle.js"></script>
+    <div style="position:relative;">
+      <div id="a">
+          <p><b>div#a</b></p>
+      </div>
+  
+      <div id="b" style="transform: scale(2) translate(25%, 15%);">
+          <p><b>div#b</b></p>
+      </div>
+  
+      <div id="c" style="position:relative; z-index: 1">
+          <p><b>div#c</b></p>
+      </div>
+      <div id="d" style="position:absolute; z-index: -1">
+          <p><b>div#d</b></p>
+      </div>
+      <div class="card flipped">
+        <div class="side front">
+            <div class="suit">&clubs;</div>
+        </div>
+        <div class="side back"></div>
+    </div>
+  </div>
+  </body>
+</html>
