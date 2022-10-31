@@ -256,6 +256,8 @@ html, body{
 }
 
 .demo-input {
+    max-width: 800px;
+    max-height: 400px;
     background: #eee;
     border: 4px solid #aaa;
     transition: background .4s,
