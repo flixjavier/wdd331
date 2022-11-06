@@ -114,6 +114,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  --wght:800;
+  --mono: "MONO" 1;
+  --crsv: "CRSV" 1;
+  background-color: #FA620D;
+  color: #fff;
 }
 
 .alert p {
