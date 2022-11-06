@@ -26,8 +26,8 @@
   /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
 }
 
-html{
-    font-size: 20px;
+html {
+  font-size: 20px;
 }
 
 body {
@@ -50,20 +50,25 @@ h2 {
 hr {
   border-top: 4px dotted black;
 }
+
 p {
   text-align: justify;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 100px 4fr 100px;
 }
+
 .header {
   grid-column: 1/4;
   display: flex;
 }
+
 .page {
   width: 100px;
 }
+
 .chapter {
   width: 100%;
 }
@@ -72,22 +77,26 @@ p {
   grid-column: 2/3;
   grid-row: 2/3;
 }
+
 .content-2 {
   grid-column: 2/3;
   grid-row: 3/4;
 }
+
 .content-3 {
   grid-column: 2/3;
   grid-row: 4/5;
 }
+
 .alert-container {
   display: flex;
-  
 }
+
 .alert-container p {
   padding: 10px;
   border-left: 1px solid grey;
 }
+
 .alert {
   width: 100px;
   height: 100px;
@@ -95,14 +104,17 @@ p {
   border-radius: 50%;
   margin: auto;
 }
+
 .alert p {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .alert-container p {
   width: 75%;
 }
+
 ul {
   list-style-type: square;
 }
@@ -116,7 +128,9 @@ li {
 }
 
 .mono {
-    --mono: "MONO" 1;
-    --wght: 400;
-    --crsv: 0;
-  }
+  --mono: "MONO" 1;
+  --wght: 400;
+  --crsv: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
