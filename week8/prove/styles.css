@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   font-size: var(--s2);
-  --wght:400;
+  --wght: 400;
 }
 
 hr {
@@ -150,7 +150,7 @@ li {
 }
 
 strong {
-  --wght:500;
+  --wght: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */

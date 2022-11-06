@@ -25,13 +25,13 @@
   --crsv: "CRSV" 0.5;
   /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
 }
-*{
+* {
   font-weight: var(--wght);
   font-style: oblique var(--slnt);
   font-variation-settings: var(--mono), var(--casl), var(--crsv);
 }
-html{
-    font-size: 20px;
+html {
+  font-size: 20px;
 }
 
 body {
@@ -50,7 +50,7 @@ h1 {
 
 h2 {
   font-size: var(--s2);
-  --wght:400;
+  --wght: 400;
 }
 
 hr {
@@ -89,7 +89,6 @@ hr {
 }
 .alert-container {
   display: flex;
-  
 }
 .alert-container p {
   padding: 10px;
@@ -126,16 +125,15 @@ li {
   max-width: 75ch;
 }
 
-.mono{
-  --mono: 'MONO' 1;
+.mono {
+  --mono: "MONO" 1;
   font-size: 0.8em;
 }
 
-.uppercase{
+.uppercase {
   --wght: 500;
   text-transform: uppercase;
 }
-strong{
- --wght:500; 
+strong {
+  --wght: 500;
 }
-
