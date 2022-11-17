@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <title>Week 8 Prove</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="page">126</div>
+            <div class="chapter">
+                <div> Chapter 6</div>
+                <hr>
+            </div>
+        </div>
+        <div class="content-1">
+            <p id="paragraph-1">
+                For example, say your developers have come up with the perfect amortization program and you want to install it on the workgroup server for other systems to remotely mount and use. Because this is a third-party or custom application, the logical place for it is in <em class="mono">/usr/local/appname</em>, possibly with a link to the program binary in the <em class="mono">/usr/local/bin</em> directory (because that's in the path).
+            </p>
+            <div class="alert-container">
+                <div class="alert"><h3>Alert</h3></div>
+                <p>If given a choice between putting the software package <strong><em class="uppercase">bigprog</em></strong> in the <strong>/usr/local/<em class="uppercase">bigprog</em></strong> section and the <strong>/opt/<em class="uppercase">bigprog</em></strong> section, it's hard to choose. Read any relevant exam question closely--the main difference being that the <strong>/opt</strong> section is not considered to be sharable, whereas the <strong>/usr</strong> section is often shared and mounted by client systems.</p>
+            </div>
+        </div>
+        <div class="content-2">
+            <h1>File Management Commands</h1>
+            <p id="paragraph-2"> 
+                A major section of the 101 exam is dedicated to how to run commands properly with the right options and arguments. As a good sysadmin, you'll be expected to know how to create, delete, edit, set permissions on, display, move, copy, and determine the type of files and programs.
+            </p>
+            <div class="alert-container">
+                <div class="alert"><h3>Alert</h3></div>
+                <p>You must be able to pick proper and working commands out of lists of possibilities, type in appropriate strings in fill-in-the-blank boxes, and in general show that you've run the programs and utilities in question.</p>
+            </div>
+        </div>
+        <div class="content-3">
+            <h2>Tips for working with Linux files</h2>
+            <p id="paragraph-3">
+                Because most users and sysadmins come from a Windows or other OS background, a quick set of recommendations for the less-experienced can be of help here:
+            </p>
+            <ul>
+                <li><strong>Hidden files aren't really hidden</strong> - They just begin with a ., such as the <em class="mono">.bashrc</em> and <em class="mono">.bash_profile</em> files. These are not viewable by normal users with conventional commands and switches and aren't deleted by commands such as <em class="mono"> rm -f *.*</em>.</li>
+                <li><strong>Filenames can contain multiple periods or no period characters</strong> - The filenames <em class="mono">this.is.a.long.file</em> and <em class="mono">thisisalongfile</em> are perfectly reasonable and possible.</li>
+                <li><strong>Spaces in filenames look nice, but are a pain to type</strong> - Use an _ or a - instead of spaces because it's neater and easier than prefixing all spaces with a \. (To display a space in a filename, the system shows a space prefixes with a backslash.)</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap");
+
+:root {
+	--ratio: 1.5;
+	--s-5: calc(var(--s-4) / var(--ratio));
+	--s-4: calc(var(--s-3) / var(--ratio));
+	--s-3: calc(var(--s-2) / var(--ratio));
+	--s-2: calc(var(--s-1) / var(--ratio));
+	--s-1: calc(var(--s0) / var(--ratio));
+	--s0: 1rem;
+	--s1: calc(var(--s0) * var(--ratio));
+	--s2: calc(var(--s1) * var(--ratio));
+	--s3: calc(var(--s2) * var(--ratio));
+	--s4: calc(var(--s3) * var(--ratio));
+	--s5: calc(var(--s4) * var(--ratio));
+	--font-color: #333;
+
+	/* set variation axis values */
+	--mono: "MONO" 0; /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+	--casl: "CASL" 0; /* Casual: Linear to Casual */
+	--wght: 300; /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+	--slnt: 0deg; /* Slant: 0 to -15 degrees, auto cursive at -14 */
+	--crsv: "CRSV" 0.5; /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
+}
+
+* {
+	font-weight: var(--wght);
+	font-style: oblique var(--slnt);
+	font-variation-settings: var(--mono), var(--casl), var(--crsv);
+}
+
+html {
+	font-size: 20px;
+}
+
+body {
+	width: auto;
+	border: 1px solid black;
+	margin: auto;
+	padding: 100px;
+	color: var(--font-color);
+	font-family: Recursive, sans-serif;
+}
+
+h1 {
+	font-size: var(--s3);
+
+	--wght: 600;
+}
+
+h2 {
+	font-size: var(--s2);
+
+	--wght: 400;
+}
+
+hr {
+	border-top: 4px dotted black;
+}
+
+p, ul, li {
+	text-align: justify;
+	line-height: var(--s1);
+	margin: var(--s1);
+	max-width: 75ch;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 100px 1fr 200px;
+}
+
+.header {
+	grid-column: 1/4;
+	display: grid;
+	grid-template-columns: 100px 1fr 200px;
+}
+
+.page {
+	width: 100px;
+}
+
+.chapter {
+	width: 100%;
+}
+
+.content-1 {
+	max-width: 90%;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.content-2 {
+	max-width: 90%;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.content-3 {
+	max-width: 90%;
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+.alert-container {
+	display: flex;
+}
+
+.alert-container p {
+	padding: 10px;
+	border-left: 1px solid grey;
+	width: 75%;
+}
+
+.alert {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	border-radius: 50%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fa620d;
+	color: #fff;
+
+	--wght: 800;
+	--mono: "MONO" 1;
+	--crsv: "CRSV" 1;
+}
+
+.alert p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul {
+	list-style-type: square;
+}
+
+.mono {
+	--mono: "MONO" 1;
+
+	font-size: 0.8em;
+}
+
+.uppercase {
+	--wght: 500;
+
+	text-transform: uppercase;
+}
+
+strong {
+	--wght: 500;
+}
+
+/*# sourceMappingURL=styles.css.map */

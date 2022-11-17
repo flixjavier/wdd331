@@ -1,0 +1,13 @@
+
+styles.css
+ 122:2  ✖  Unexpected empty line before custom property                        custom-property-empty-line-before
+ 124:2  ✖  Unexpected empty line before custom property                        custom-property-empty-line-before
+ 137:1  ✖  Expected selector "p" to come before selector ".alert-container p"  no-descending-specificity        
+ 137:1  ✖  Expected selector "p" to come before selector ".alert p"            no-descending-specificity        
+ 137:2  ✖  Unexpected whitespace after "," in a multi-line list                selector-list-comma-newline-after
+ 137:2  ✖  Expected single space after ","                                     selector-list-comma-space-after  
+ 138:3  ✖  Unexpected whitespace after "," in a multi-line list                selector-list-comma-newline-after
+ 138:3  ✖  Expected single space after ","                                     selector-list-comma-space-after
+
+8 problems (8 errors, 0 warnings)
+
