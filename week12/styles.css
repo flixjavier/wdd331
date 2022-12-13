@@ -1,0 +1,33 @@
+.svgcontainer {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}
+
+.rectangle {
+    fill:darkred;
+    stroke:black;
+    stroke-width:5;
+    opacity:0.5;
+}
+
+line{
+    stroke: blue;
+    stroke-width: 3;
+}
+
+.star{
+    fill:lime;
+    stroke:purple;
+    stroke-width:5;
+    fill-rule:evenodd;
+}
+svg{background-color:white;}
+#wing{fill:#81CCAA;}
+#body{fill:#B8E4C2;}
+#pupil{fill:#1F2600;}
+#beak{fill:#F69C0D;}
+.eye-ball{fill:#F6FDC4;}
+#bird{
+    stroke: black;
+}

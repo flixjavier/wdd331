@@ -1,0 +1,171 @@
+div {
+	margin-bottom: 20px;
+}
+
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;
+}
+
+#oval {
+	width: 200px;
+	height: 100px;
+	background: red;
+	border-radius: 100px / 50px;
+}
+
+#triangle-up{
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 400px solid red;
+}
+
+#triangle-down{
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 400px solid red;
+}
+#triangle-left{
+	width: 0;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-bottom: 200px solid transparent;
+	border-right: 400px solid red;
+}
+#triangle-right{
+	width: 0;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-bottom: 200px solid transparent;
+	border-left: 400px solid red;
+}
+#triangle-topleft{
+	width: 0;
+	height: 0;
+	border-right: 200px solid transparent;
+	border-top: 200px solid red;
+}
+
+#triangle-topright{
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-top: 200px solid red;
+}
+#triangle-bottomleft{
+	width: 0;
+	height: 0;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid red;
+}
+#triangle-bottomright{
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-bottom: 200px solid red;
+}
+
+#arrow {
+	position: relative;
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-right: 9px solid red;
+	transform: rotate(10deg);
+}
+#arrow:after {
+	content: "";
+	position: absolute;
+	border: 0 solid transparent;
+	border-top: 3px solid red;
+	border-radius: 20px 0 0 0;
+	top: -12px;
+	left: -9px;
+	width: 12px;
+	height: 12px;
+	transform: rotate(45deg);
+}
+
+.linear-gradient {
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(
+		red 0%,
+		orange 25%,
+		yellow 50%,
+		green 75%,
+		blue 100%
+	);
+}
+
+#radial-gradient {
+    width: 250px;
+	height: 250px;
+	background: radial-gradient(
+		closest-side,
+		darkorange 60%,
+		gold,
+		bisque,
+		darkred 20%,
+		crimson
+	);
+}
+
+#conic-gradient{
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(
+        from 45deg at 65% 60%,orange,white,black,green,red, pink
+    );
+}
+
+#conic-gradient2 {
+    width: 250px;
+    height: 250px;
+	background: conic-gradient(from 20deg at 50% 50%,
+     gold 20deg, lightcoral 20deg 190deg, mediumturquoise 190deg 220deg, plum 220deg 320deg, steelblue 320deg);
+  border-radius: 50%;
+  border: 10px solid;
+}
+
+#repeating-linear-gradient{
+    width: 250px;
+    height: 250px;
+    background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 30px,
+    white 30px,
+    white 60px
+  );
+}
+
+.my-element {
+	background: linear-gradient(-45deg, blue -30%, transparent 80%), linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
+}
+
+/* Presentational styles */
+.my-element {
+  width: 250px;
+  height: 250px;
+}
+
+
